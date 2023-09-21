@@ -14,7 +14,7 @@
 /.idea
 /cmake-build-debug-debug-wsl
 /cmake-build-relwithdebinfo
-
+out.asm
 
 
 # Compiled Dynamic libraries
