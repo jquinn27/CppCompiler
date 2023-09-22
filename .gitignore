@@ -16,7 +16,6 @@
 /cmake-build-relwithdebinfo
 out.asm
 
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
