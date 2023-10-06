@@ -10,8 +10,9 @@ public:
         m_offset = m_buffer;
     }
 
-    template<typename T>
-    inline T* alloc(){
+    template <typename T>
+    inline T* alloc()
+    {
         void* offset = m_offset;
         m_offset += sizeof(T);
         return static_cast<T*>(offset);
@@ -21,7 +22,8 @@ public:
 
     inline ArenaAllocator operator=(const ArenaAllocator& other) = delete;
 
-    inline ~ArenaAllocator(){
+    inline ~ArenaAllocator()
+    {
         free(m_buffer);
     }
 
